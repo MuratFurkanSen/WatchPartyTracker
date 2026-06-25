@@ -62,7 +62,16 @@ Stop:
 docker compose down
 ```
 
-Compose stores the SQLite database in `./data/app.db` through a bind mount. If another local server is already using port `8000`, stop it first or change the left side of the port mapping in [compose.yaml](compose.yaml).
+Compose stores the SQLite database in a named Docker volume mounted at `/app/data`. This avoids host-folder permission issues on Linux and Raspberry Pi deployments.
+
+Inspect the volume:
+
+```powershell
+docker volume ls
+docker volume inspect watchpartytracker_watch_party_data
+```
+
+If another local server is already using port `8000`, stop it first or change the left side of the port mapping in [compose.yaml](compose.yaml).
 
 ## Database
 
@@ -70,6 +79,12 @@ SQLite is stored at:
 
 ```text
 data/app.db
+```
+
+Inside Docker, SQLite is stored at:
+
+```text
+/app/data/app.db
 ```
 
 The database tables are created on startup. Countries are seeded automatically when the country table is empty.
