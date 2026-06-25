@@ -1,0 +1,11 @@
+services:
+  web:
+    build: .
+    container_name: watch-party-board
+    environment:
+      WATCH_PARTY_DB_PATH: /app/data/app.db
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./data:/app/data
+    restart: unless-stopped

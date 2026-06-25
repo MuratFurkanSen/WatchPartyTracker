@@ -1,0 +1,79 @@
+{% extends "base.html" %}
+
+{% block content %}
+  {% if not places %}
+    <section class="card form-card empty-state">
+      <h1>No places yet.</h1>
+      <p>Add a place first.</p>
+      <a class="button button-primary" href="/places">Go to Places</a>
+    </section>
+  {% else %}
+    <section class="card form-card">
+      <div class="section-heading">
+        <h1>Create Party</h1>
+      </div>
+
+      <form method="post" action="/parties">
+        <div class="form-group">
+          <label for="country_a_id">Country 1</label>
+          <select id="country_a_id" name="country_a_id" required>
+            <option value="">Choose country</option>
+            {% for country in countries %}
+              <option value="{{ country.id }}" {% if form.country_a_id|default("")|int == country.id %}selected{% endif %}>
+                {{ country.flag_emoji }} {{ country.name }}
+              </option>
+            {% endfor %}
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="country_b_id">Country 2</label>
+          <select id="country_b_id" name="country_b_id" required>
+            <option value="">Choose country</option>
+            {% for country in countries %}
+              <option value="{{ country.id }}" {% if form.country_b_id|default("")|int == country.id %}selected{% endif %}>
+                {{ country.flag_emoji }} {{ country.name }}
+              </option>
+            {% endfor %}
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="match_date">Date</label>
+          <input
+            id="match_date"
+            name="match_date"
+            type="date"
+            value="{{ form.match_date|default('') }}"
+            required
+          >
+        </div>
+
+        <div class="form-group">
+          <label for="start_time">Start time</label>
+          <input
+            id="start_time"
+            name="start_time"
+            type="time"
+            value="{{ form.start_time|default('') }}"
+            required
+          >
+        </div>
+
+        <div class="form-group">
+          <label for="place_id">Place</label>
+          <select id="place_id" name="place_id" required>
+            <option value="">Choose place</option>
+            {% for place in places %}
+              <option value="{{ place.id }}" {% if form.place_id|default("")|int == place.id %}selected{% endif %}>
+                {{ place.name }}
+              </option>
+            {% endfor %}
+          </select>
+        </div>
+
+        <button class="button button-primary" type="submit">Create Party</button>
+      </form>
+    </section>
+  {% endif %}
+{% endblock %}

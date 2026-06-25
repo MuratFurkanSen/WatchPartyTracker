@@ -1,0 +1,68 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <section class="places-layout">
+    <div class="card form-card">
+      <div class="section-heading">
+        <h1>Add Place</h1>
+      </div>
+
+      <form method="post" action="/places">
+        <div class="form-group">
+          <label for="name">Place name</label>
+          <input
+            id="name"
+            name="name"
+            type="text"
+            maxlength="80"
+            value="{{ form.name|default('') }}"
+            required
+          >
+        </div>
+
+        <div class="form-group">
+          <label for="maps_url">Google Maps link optional</label>
+          <input
+            id="maps_url"
+            name="maps_url"
+            type="url"
+            maxlength="500"
+            value="{{ form.maps_url|default('') }}"
+          >
+        </div>
+
+        <button class="button button-primary" type="submit">Add Place</button>
+      </form>
+    </div>
+
+    <section class="places-list-section">
+      <div class="section-heading">
+        <h1>Existing Places</h1>
+      </div>
+
+      {% if places %}
+        <div class="places-list">
+          {% for place in places %}
+            <div class="place-row">
+              <div class="place-main">
+                <strong>{{ place.name }}</strong>
+                {% if place.maps_url %}
+                  <a href="{{ place.maps_url }}" target="_blank" rel="noopener noreferrer">Directions</a>
+                {% endif %}
+              </div>
+              <form method="post" action="/places/{{ place.id }}/delete">
+                <button
+                  class="button button-danger"
+                  type="submit"
+                  onclick="return confirm('Delete this place?')"
+                >Delete</button>
+              </form>
+            </div>
+          {% endfor %}
+        </div>
+      {% else %}
+        <p class="muted">No places yet.</p>
+      {% endif %}
+    </section>
+  </section>
+{% endblock %}

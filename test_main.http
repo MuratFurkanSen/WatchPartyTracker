@@ -1,0 +1,23 @@
+# Test the watch party board
+
+GET http://127.0.0.1:8000/
+Accept: text/html
+
+###
+
+GET http://127.0.0.1:8000/parties/new
+Accept: text/html
+
+###
+
+GET http://127.0.0.1:8000/places
+Accept: text/html
+
+###
+
+POST http://127.0.0.1:8000/places
+Content-Type: application/x-www-form-urlencoded
+
+name=Irish%20Pub&maps_url=https%3A%2F%2Fmaps.google.com
+
+###

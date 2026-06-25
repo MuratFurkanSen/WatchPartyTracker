@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <section class="page-hero">
+    <div>
+      <h1>World Cup Watch Parties <span aria-hidden="true">⚽</span></h1>
+      <p>Pick a match, add your name, show up.</p>
+    </div>
+    <div class="hero-actions">
+      <a class="button button-primary" href="/parties/new">Create Party</a>
+      <a class="button button-secondary" href="/places">Places</a>
+    </div>
+  </section>
+
+  {% if parties %}
+    <section class="party-grid" aria-label="Upcoming watch parties">
+      {% for party in parties %}
+        {% include "_party_card.html" %}
+      {% endfor %}
+    </section>
+  {% else %}
+    <section class="card empty-state">
+      <h2>No watch parties yet <span aria-hidden="true">⚽</span></h2>
+      <p>Create the first one and make WhatsApp slightly less cursed.</p>
+      <a class="button button-primary" href="/parties/new">Create Party</a>
+    </section>
+  {% endif %}
+{% endblock %}

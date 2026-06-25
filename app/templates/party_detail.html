@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <div class="back-row">
+    <a href="/" class="button button-secondary">Back to all parties</a>
+  </div>
+
+  <section class="party-detail" aria-label="Watch party">
+    {% include "_party_card.html" %}
+  </section>
+{% endblock %}

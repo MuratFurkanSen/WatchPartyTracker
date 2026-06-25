@@ -1,0 +1,70 @@
+<article class="card party-card">
+  <div class="party-card-top">
+    <div class="matchup">
+      <div class="team">
+        <span class="flag" aria-hidden="true">{{ party.country_a.flag_emoji }}</span>
+        <span>{{ party.country_a.name }}</span>
+      </div>
+      <div class="versus">vs</div>
+      <div class="team">
+        <span class="flag" aria-hidden="true">{{ party.country_b.flag_emoji }}</span>
+        <span>{{ party.country_b.name }}</span>
+      </div>
+    </div>
+    <a class="detail-link" href="/parties/{{ party.id }}">Open</a>
+  </div>
+
+  <dl class="party-meta">
+    <div>
+      <dt>Date</dt>
+      <dd>{{ party.match_date|match_date }} &middot; {{ party.start_time|match_time }}</dd>
+    </div>
+    <div>
+      <dt>Place</dt>
+      <dd>
+        <span>{{ party.place.name }}</span>
+        {% if party.place.maps_url %}
+          <a href="{{ party.place.maps_url }}" target="_blank" rel="noopener noreferrer">Directions</a>
+        {% endif %}
+      </dd>
+    </div>
+  </dl>
+
+  <div class="attendee-block">
+    <h2>Coming {{ party.attendees|length }}</h2>
+    {% if party.attendees %}
+      <div class="attendee-list">
+        {% for attendee in party.attendees %}
+          <div class="attendee-chip">
+            <span>{{ attendee.name }}</span>
+            <form method="post" action="/attendees/{{ attendee.id }}/delete">
+              <button
+                class="attendee-delete"
+                type="submit"
+                aria-label="Remove {{ attendee.name }}"
+                onclick="return confirm('Remove this name?')"
+              >&times;</button>
+            </form>
+          </div>
+        {% endfor %}
+      </div>
+    {% else %}
+      <p class="muted compact">No names yet.</p>
+    {% endif %}
+  </div>
+
+  <form class="join-form" method="post" action="/parties/{{ party.id }}/join">
+    <label for="name-{{ party.id }}">Your name</label>
+    <div class="join-row">
+      <input
+        id="name-{{ party.id }}"
+        name="name"
+        type="text"
+        maxlength="40"
+        autocomplete="name"
+        required
+      >
+      <button class="button button-primary" type="submit">I'm coming</button>
+    </div>
+  </form>
+</article>

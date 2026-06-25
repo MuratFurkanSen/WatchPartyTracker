@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ title or "World Cup Watch Parties" }}</title>
+  <link rel="stylesheet" href="{{ url_for('static', path='styles.css') }}">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="/" class="brand">World Cup Watch Parties <span aria-hidden="true">⚽</span></a>
+      <nav class="nav" aria-label="Main navigation">
+        <a href="/" {% if request.url.path == "/" %}aria-current="page"{% endif %}>Parties</a>
+        <a href="/parties/new" {% if request.url.path == "/parties/new" %}aria-current="page"{% endif %}>Create Party</a>
+        <a href="/places" {% if request.url.path == "/places" %}aria-current="page"{% endif %}>Places</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    {% if error %}
+      <div class="alert alert-error" role="alert">{{ error }}</div>
+    {% endif %}
+
+    {% if success %}
+      <div class="alert alert-success" role="status">{{ success }}</div>
+    {% endif %}
+
+    {% block content %}{% endblock %}
+  </main>
+</body>
+</html>
