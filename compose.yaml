@@ -5,7 +5,7 @@ services:
     environment:
       WATCH_PARTY_DB_PATH: /app/data/app.db
     ports:
-      - "8000:8000"
+      - "7000:8000"
     volumes:
       - watch_party_data:/app/data
     restart: unless-stopped
