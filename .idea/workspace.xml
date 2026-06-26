@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c0031966-cadd-4084-9c00-dec99d8f05c9" name="Changes" comment="Add Twemoji integration for consistent emoji rendering across the app">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/seed.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/seed.py" afterDir="false" />
-    </list>
+    <list default="true" id="c0031966-cadd-4084-9c00-dec99d8f05c9" name="Changes" comment="Order countries list to prioritize &quot;TBD&quot; and add placeholder to seed data" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -47,61 +43,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.7832967286565289" />
-      <entry key="MS500" value="5.40091403267736" />
-      <entry key="S2" value="14.029525122580104" />
-      <entry key="S5" value="25.991006746932815" />
-      <entry key="S10" value="38.47392627048483" />
-      <entry key="S30" value="58.00683275748387" />
-      <entry key="S60" value="69.13090198345664" />
-      <entry key="M2" value="89.71152648959557" />
-      <entry key="M5" value="136.6167117913457" />
-      <entry key="M10" value="178.99315912748528" />
-      <entry key="M15" value="206.35501357114816" />
-      <entry key="M30" value="265.5678284447816" />
-      <entry key="H1" value="333.1934506949055" />
-      <entry key="H2" value="389.10562431858637" />
-      <entry key="H4" value="425.7551683077414" />
-      <entry key="D1" value="462.0288024315105" />
-      <entry key="W1" value="468.84563044432633" />
+      <entry key="MS100" value="2.13814720607042" />
+      <entry key="MS500" value="5.28077897963347" />
+      <entry key="S2" value="14.472702251750626" />
+      <entry key="S5" value="28.691224325562857" />
+      <entry key="S10" value="42.735797902655676" />
+      <entry key="S30" value="60.58903300614436" />
+      <entry key="S60" value="69.39065247788393" />
+      <entry key="M2" value="86.21610578661044" />
+      <entry key="M5" value="141.4075215811781" />
+      <entry key="M10" value="203.93151678722916" />
+      <entry key="M15" value="243.9819591057993" />
+      <entry key="M30" value="320.91564758589504" />
+      <entry key="H1" value="401.9535585042745" />
+      <entry key="H2" value="467.77186964537447" />
+      <entry key="H4" value="510.86352366644843" />
+      <entry key="D1" value="553.5938816230591" />
+      <entry key="W1" value="561.6374271741693" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
-      <entry key="MS500" value="5.516363663350163E-143" />
-      <entry key="S2" value="2.7252931352323408E-36" />
-      <entry key="S5" value="5.945183843706925E-15" />
-      <entry key="S10" value="7.710501827836454E-8" />
-      <entry key="S30" value="0.004256254105326245" />
-      <entry key="S60" value="0.06523997321678059" />
-      <entry key="M2" value="0.2554211683020428" />
-      <entry key="M5" value="0.5792989679935721" />
-      <entry key="M10" value="0.761116921368572" />
-      <entry key="M15" value="0.8336189622806095" />
-      <entry key="M30" value="0.9130273611894725" />
-      <entry key="H1" value="0.9555246523190649" />
-      <entry key="H2" value="0.9775094129056086" />
-      <entry key="H4" value="0.9886907569637771" />
-      <entry key="D1" value="0.9981061824066784" />
-      <entry key="W1" value="0.9997292347873524" />
+      <entry key="MS500" value="0.0" />
+      <entry key="S2" value="3.589574460517318E-93" />
+      <entry key="S5" value="1.052003504644424E-37" />
+      <entry key="S10" value="3.2434603506817036E-19" />
+      <entry key="S30" value="6.870729716663823E-7" />
+      <entry key="S60" value="8.288986498157568E-4" />
+      <entry key="M2" value="0.02879060002528173" />
+      <entry key="M5" value="0.24193588323224177" />
+      <entry key="M10" value="0.49186978280053273" />
+      <entry key="M15" value="0.6231129284299468" />
+      <entry key="M30" value="0.7893750239461281" />
+      <entry key="H1" value="0.8884677956719224" />
+      <entry key="H2" value="0.942585696725727" />
+      <entry key="H4" value="0.970868527003384" />
+      <entry key="D1" value="0.9950847496659359" />
+      <entry key="W1" value="0.9992963376997869" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="1.6860851907144951" />
-      <entry key="MS500" value="5.337682833746279" />
-      <entry key="S2" value="13.986824486759206" />
-      <entry key="S5" value="25.953244328884495" />
-      <entry key="S10" value="38.43618951294307" />
-      <entry key="S30" value="57.98503703455992" />
-      <entry key="S60" value="69.17907106704766" />
-      <entry key="M2" value="89.95541411081007" />
-      <entry key="M5" value="137.18908818657874" />
-      <entry key="M10" value="179.74991745997744" />
-      <entry key="M15" value="207.1853964871167" />
-      <entry key="M30" value="266.4789406108642" />
-      <entry key="H1" value="334.1478679705682" />
-      <entry key="H2" value="390.0825208593793" />
-      <entry key="H4" value="426.7435335604916" />
-      <entry key="D1" value="463.0268512451758" />
-      <entry key="W1" value="469.8453514002107" />
+      <entry key="MS100" value="2.0249177007191035" />
+      <entry key="MS500" value="5.225635548750143" />
+      <entry key="S2" value="14.434153940163368" />
+      <entry key="S5" value="28.659911895556966" />
+      <entry key="S10" value="42.71219783202324" />
+      <entry key="S30" value="60.57758914754019" />
+      <entry key="S60" value="69.38394530203888" />
+      <entry key="M2" value="86.23855736728807" />
+      <entry key="M5" value="141.6437994029917" />
+      <entry key="M10" value="204.4189947145101" />
+      <entry key="M15" value="244.6015537258908" />
+      <entry key="M30" value="321.70279048744936" />
+      <entry key="H1" value="402.84070145428467" />
+      <entry key="H2" value="468.713714967278" />
+      <entry key="H4" value="511.8339973990171" />
+      <entry key="D1" value="554.5888965871445" />
+      <entry key="W1" value="562.6367134363273" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -205,7 +201,7 @@
       <updated>1782418449717</updated>
       <workItem from="1782418452260" duration="4459000" />
       <workItem from="1782458610808" duration="1711000" />
-      <workItem from="1782478270606" duration="513000" />
+      <workItem from="1782478270606" duration="812000" />
     </task>
     <task id="LOCAL-00001" summary="Initialize project with FastAPI, templates, Docker support, and database setup.">
       <option name="closed" value="true" />
@@ -247,7 +243,15 @@
       <option name="project" value="LOCAL" />
       <updated>1782460209995</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Order countries list to prioritize &quot;TBD&quot; and add placeholder to seed data">
+      <option name="closed" value="true" />
+      <created>1782478855404</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1782478855404</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -259,7 +263,8 @@
     <MESSAGE value="Update compose.yaml to change exposed port from 8000 to 7000" />
     <MESSAGE value="Add additional countries and flags to the seed data" />
     <MESSAGE value="Add Twemoji integration for consistent emoji rendering across the app" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add Twemoji integration for consistent emoji rendering across the app" />
+    <MESSAGE value="Order countries list to prioritize &quot;TBD&quot; and add placeholder to seed data" />
+    <option name="LAST_COMMIT_MESSAGE" value="Order countries list to prioritize &quot;TBD&quot; and add placeholder to seed data" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/FastAPIProject$FastAPIProject.coverage" NAME="FastAPIProject Coverage Results" MODIFIED="1782418800298" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />

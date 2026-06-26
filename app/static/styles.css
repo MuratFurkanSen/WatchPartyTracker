@@ -192,15 +192,22 @@ a {
 }
 
 .emoji-icon {
-  display: inline-block;
-  height: 1.15em;
+  aspect-ratio: 1;
+  display: inline-flex;
+  flex: 0 0 auto;
+  height: 1.15rem !important;
+  max-height: 1.15rem;
+  max-width: 1.15rem;
+  object-fit: contain;
   vertical-align: -0.15em;
-  width: 1.15em;
+  width: 1.15rem !important;
 }
 
 .emoji-icon-large {
-  height: 0.9em;
-  width: 0.9em;
+  height: clamp(2rem, 7vw, 3.25rem) !important;
+  max-height: 3.25rem;
+  max-width: 3.25rem;
+  width: clamp(2rem, 7vw, 3.25rem) !important;
 }
 
 .versus {
