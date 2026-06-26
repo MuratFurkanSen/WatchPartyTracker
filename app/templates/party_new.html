@@ -20,7 +20,7 @@
             <option value="">Choose country</option>
             {% for country in countries %}
               <option value="{{ country.id }}" {% if form.country_a_id|default("")|int == country.id %}selected{% endif %}>
-                {{ country.flag_emoji }} {{ country.name }}
+                {{ country.name }}
               </option>
             {% endfor %}
           </select>
@@ -32,7 +32,7 @@
             <option value="">Choose country</option>
             {% for country in countries %}
               <option value="{{ country.id }}" {% if form.country_b_id|default("")|int == country.id %}selected{% endif %}>
-                {{ country.flag_emoji }} {{ country.name }}
+                {{ country.name }}
               </option>
             {% endfor %}
           </select>

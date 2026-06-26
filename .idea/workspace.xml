@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c0031966-cadd-4084-9c00-dec99d8f05c9" name="Changes" comment="Initialize project with FastAPI, templates, Docker support, and database setup.">
+    <list default="true" id="c0031966-cadd-4084-9c00-dec99d8f05c9" name="Changes" comment="Update compose.yaml to change exposed port from 8000 to 7000">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/seed.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/seed.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,7 +15,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="EmbeddingIndexingInfo">
-    <option name="cachedIndexableFilesCount" value="17" />
+    <option name="cachedIndexableFilesCount" value="38" />
     <option name="fileBasedEmbeddingIndicesEnabled" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
@@ -27,41 +29,41 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "MuratFurkanSen"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;MuratFurkanSen&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/MuratFurkanSen/WatchPartyTracker.git",
-    "accountId": "99a1ec72-18b1-4081-8822-a87c22614d8a"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/MuratFurkanSen/WatchPartyTracker.git&quot;,
+    &quot;accountId&quot;: &quot;99a1ec72-18b1-4081-8822-a87c22614d8a&quot;
   }
-}]]></component>
+}</component>
   <component name="McpProjectServerCommands">
     <commands />
     <urls />
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0" />
-      <entry key="MS500" value="1.0" />
-      <entry key="S2" value="1.0000476257010993" />
-      <entry key="S5" value="1.0736199966198825" />
-      <entry key="S10" value="2.1475305540135614" />
-      <entry key="S30" value="12.256519506698515" />
-      <entry key="S60" value="23.09184429017288" />
-      <entry key="M2" value="34.32193102974943" />
-      <entry key="M5" value="47.47515817537656" />
-      <entry key="M10" value="58.24200724391802" />
-      <entry key="M15" value="71.82173146205177" />
-      <entry key="M30" value="114.88521027720213" />
-      <entry key="H1" value="167.10317115832495" />
-      <entry key="H2" value="208.6791166234552" />
-      <entry key="H4" value="235.0381981413516" />
-      <entry key="D1" value="260.4871243801063" />
-      <entry key="W1" value="265.2033467434215" />
+      <entry key="MS100" value="2.0740127014788814" />
+      <entry key="MS500" value="3.927394436832849" />
+      <entry key="S2" value="4.689389168472216" />
+      <entry key="S5" value="4.872282884145735" />
+      <entry key="S10" value="4.9564582629321485" />
+      <entry key="S30" value="5.815669695237944" />
+      <entry key="S60" value="9.8177883921309" />
+      <entry key="M2" value="18.623132054852952" />
+      <entry key="M5" value="38.6725345572924" />
+      <entry key="M10" value="60.8810557162251" />
+      <entry key="M15" value="79.01572158465501" />
+      <entry key="M30" value="127.21710437287572" />
+      <entry key="H1" value="186.75107182846165" />
+      <entry key="H2" value="236.4339473266666" />
+      <entry key="H4" value="268.92656702257506" />
+      <entry key="D1" value="300.97423053635873" />
+      <entry key="W1" value="306.98293151824714" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
@@ -83,23 +85,23 @@
       <entry key="W1" value="0.0" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.9659363289248456" />
-      <entry key="MS500" value="0.9930924954370359" />
-      <entry key="S2" value="0.9983161053678253" />
-      <entry key="S5" value="1.072835995187995" />
-      <entry key="S10" value="2.14644553616063" />
-      <entry key="S30" value="12.253506010022395" />
-      <entry key="S60" value="23.088762207291722" />
-      <entry key="M2" value="34.31957904341116" />
-      <entry key="M5" value="47.47385922634057" />
-      <entry key="M10" value="58.2412252309827" />
-      <entry key="M15" value="71.821105643606" />
-      <entry key="M30" value="114.88473257430225" />
-      <entry key="H1" value="167.10283184190857" />
-      <entry key="H2" value="208.67890679059403" />
-      <entry key="H4" value="235.0380804571145" />
-      <entry key="D1" value="260.4871027081691" />
-      <entry key="W1" value="265.2033435929003" />
+      <entry key="MS100" value="2.008533802143422" />
+      <entry key="MS500" value="3.8999084621028537" />
+      <entry key="S2" value="4.681000584931161" />
+      <entry key="S5" value="4.868779934293725" />
+      <entry key="S10" value="4.954647331013122" />
+      <entry key="S30" value="5.814341888185424" />
+      <entry key="S60" value="9.815571170860231" />
+      <entry key="M2" value="18.620623580866035" />
+      <entry key="M5" value="38.67062253758659" />
+      <entry key="M10" value="60.87972050427518" />
+      <entry key="M15" value="79.01465848367584" />
+      <entry key="M30" value="127.21636911534486" />
+      <entry key="H1" value="186.75058448224257" />
+      <entry key="H2" value="236.43365432902715" />
+      <entry key="H4" value="268.92640445600523" />
+      <entry key="D1" value="300.97420080492776" />
+      <entry key="W1" value="306.9829272003155" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -120,6 +122,7 @@
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "codeWithMe.voiceChat.enabledByDefault": "false",
     "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
     "git-widget-placeholder": "main",
@@ -174,7 +177,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1782418449717</updated>
-      <workItem from="1782418452260" duration="4101000" />
+      <workItem from="1782418452260" duration="4459000" />
+      <workItem from="1782458610808" duration="1345000" />
     </task>
     <task id="LOCAL-00001" summary="Initialize project with FastAPI, templates, Docker support, and database setup.">
       <option name="closed" value="true" />
@@ -184,7 +188,23 @@
       <option name="project" value="LOCAL" />
       <updated>1782422200001</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Switch SQLite data to Docker volume to resolve host permission issues. Update README with volume usage details.">
+      <option name="closed" value="true" />
+      <created>1782422758101</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1782422758101</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Update compose.yaml to change exposed port from 8000 to 7000">
+      <option name="closed" value="true" />
+      <created>1782422897005</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1782422897005</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -192,7 +212,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initialize project with FastAPI, templates, Docker support, and database setup." />
-    <option name="LAST_COMMIT_MESSAGE" value="Initialize project with FastAPI, templates, Docker support, and database setup." />
+    <MESSAGE value="Switch SQLite data to Docker volume to resolve host permission issues. Update README with volume usage details." />
+    <MESSAGE value="Update compose.yaml to change exposed port from 8000 to 7000" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update compose.yaml to change exposed port from 8000 to 7000" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/FastAPIProject$FastAPIProject.coverage" NAME="FastAPIProject Coverage Results" MODIFIED="1782418800298" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />

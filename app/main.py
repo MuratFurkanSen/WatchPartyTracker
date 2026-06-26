@@ -17,6 +17,7 @@ from app.cleanup import cleanup_old_parties
 from app.database import create_db_and_tables, engine, get_session
 from app.models import Attendee, Country, Party, Place
 from app.seed import seed_countries
+from app.twemoji import country_flag_url, soccer_ball_url
 from app.validators import (
     parse_id,
     parse_match_date,
@@ -41,6 +42,8 @@ def format_match_time(value: Any) -> str:
 
 templates.env.filters["match_date"] = format_match_date
 templates.env.filters["match_time"] = format_match_time
+templates.env.filters["country_flag_url"] = country_flag_url
+templates.env.globals["soccer_ball_url"] = soccer_ball_url
 
 
 @asynccontextmanager

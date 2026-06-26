@@ -64,6 +64,9 @@ a {
 }
 
 .brand {
+  align-items: center;
+  display: inline-flex;
+  gap: var(--space-xs);
   font-size: 1rem;
   font-weight: 900;
   text-decoration: none;
@@ -106,6 +109,10 @@ a {
 }
 
 .page-hero h1 {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
   font-size: clamp(2rem, 8vw, 4rem);
 }
 
@@ -180,7 +187,20 @@ a {
 
 .flag {
   flex: 0 0 auto;
-  font-size: 1.55rem;
+  height: 1.7rem;
+  width: 1.7rem;
+}
+
+.emoji-icon {
+  display: inline-block;
+  height: 1.15em;
+  vertical-align: -0.15em;
+  width: 1.15em;
+}
+
+.emoji-icon-large {
+  height: 0.9em;
+  width: 0.9em;
 }
 
 .versus {

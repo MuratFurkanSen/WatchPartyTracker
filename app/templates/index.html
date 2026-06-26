@@ -3,7 +3,10 @@
 {% block content %}
   <section class="page-hero">
     <div>
-      <h1>World Cup Watch Parties <span aria-hidden="true">⚽</span></h1>
+      <h1>
+        World Cup Watch Parties
+        <img class="emoji-icon emoji-icon-large" src="{{ soccer_ball_url() }}" alt="" aria-hidden="true" draggable="false">
+      </h1>
       <p>Pick a match, add your name, show up.</p>
     </div>
     <div class="hero-actions">
@@ -20,7 +23,10 @@
     </section>
   {% else %}
     <section class="card empty-state">
-      <h2>No watch parties yet <span aria-hidden="true">⚽</span></h2>
+      <h2>
+        No watch parties yet
+        <img class="emoji-icon" src="{{ soccer_ball_url() }}" alt="" aria-hidden="true" draggable="false">
+      </h2>
       <p>Create the first one and make WhatsApp slightly less cursed.</p>
       <a class="button button-primary" href="/parties/new">Create Party</a>
     </section>
