@@ -8,7 +8,7 @@ from fastapi import Depends, FastAPI, Form, Request
 from fastapi.responses import HTMLResponse, RedirectResponse
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
-from sqlalchemy import func
+from sqlalchemy import case, func
 from sqlalchemy.exc import IntegrityError
 from sqlalchemy.orm import selectinload
 from sqlmodel import Session, select
@@ -136,7 +136,12 @@ def template_context(
 
 
 def load_countries(session: Session) -> list[Country]:
-    return session.exec(select(Country).order_by(Country.name)).all()
+    return session.exec(
+        select(Country).order_by(
+            case((func.lower(Country.name) == "tbd", 0), else_=1),
+            Country.name,
+        )
+    ).all()
 
 
 def load_places(session: Session) -> list[Place]:

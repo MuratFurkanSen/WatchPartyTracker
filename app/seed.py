@@ -4,6 +4,7 @@ from app.models import Country
 from app.twemoji import country_flag_emoji
 
 COUNTRIES = [
+    ("TBD", "❔"),
     ("Algeria", "🇩🇿"),
     ("Argentina", "🇦🇷"),
     ("Australia", "🇦🇺"),
